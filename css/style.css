@@ -1,0 +1,91 @@
+       /*       
+        * General attributes applicable to all the elements
+        */
+        * {
+            box-sizing: border-box;
+            color: #2d3c49;
+        }
+
+        /*
+        * Attributes for all the section, top padding and header color in section
+        */
+        section{
+            padding-top:20px;
+        }
+
+        section >h2{
+            color:#7d97ad;
+        }
+
+        /*
+        * Header section
+        */
+        .logo {
+            padding-top: 20px;
+        }
+
+        .name {
+            float: right;
+        }
+
+        .short-desc {
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+
+        /*
+        * Separator for header and body
+        */
+        .separator {
+            margin:10px 0 10px 0;
+            height: 5px;
+            background-color: #7d97ad;
+            clear: both;
+        }
+
+        /*
+        * Project section
+        */
+        .thumb{
+            text-align: center;
+        }
+        .link{
+            text-decoration: none;
+        }
+
+        .link:hover{
+            text-decoration: underline wavy #7d97ad;
+        }
+
+
+        .pad-top-10{
+            padding-top:10px; 
+        }
+
+        /*
+        * Footer section
+        */
+        footer{
+            text-align: center;
+            background-color: #7d97ad;
+            margin-top: 20px;
+        }
+        .copyright-text{
+            height:80px;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 80px;
+        }
+
+        /*
+        * Media queries for changing font size when screen size is less than 500px
+        */
+        @media screen and (max-width:500px){
+            h1{
+                font-size: 1.4em;
+            }
+            h2,  .short-desc {
+                font-size: 1.1em;
+            }
+        }
